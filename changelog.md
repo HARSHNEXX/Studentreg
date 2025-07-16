@@ -7,6 +7,37 @@
 # 🧾 Changelog – Student Admission Register
 
 ---
+## v0.3 – Modularization and Clean Input Handling (upcoming)
+
+### 🧠 Architecture:
+- Program now fully driven by `main()` for top-down control
+- Extracted all critical inputs into standalone functions:
+  - `get_count(prompt, class_name)`
+  - `get_roll(prompt)`
+  - `get_reg(prompt)`
+
+### 🔐 Input Validation:
+- All numeric inputs checked with:
+  - Type safety (`try/except`)
+  - Range enforcement (must be positive whole numbers)
+- Clean messaging for each error case
+
+### ✨ UX Improvements:
+- Dynamic prompts that include class and section name
+- Removed cluttered inline validation
+- Maintained ASCII UI for consistent branding
+
+### 📌 Ready For v1.0:
+- Add multi-student batch entry support
+- Add `save_to_csv()` to export admission data
+- Add loop with `exit()` support to admit more students without restarting script
+
+## 🚧 Version – v0.2
+- Refactor into modular functions:
+  - `get_student_count()`
+  - `register_students()`
+
+
 
 ## v0.1 – Initial Release (15 July 2025)
 
@@ -26,9 +57,4 @@
 
 ---
 
-## 🚧 Next Planned Version – v0.2
-- Refactor into modular functions:
-  - `get_student_count()`
-  - `register_students()`
-- Add support for saving output to `.csv` or `.json`
-- Allow `exit` as input anywhere to safely terminate
+
